@@ -1,0 +1,23 @@
+#Layout {
+    -fx-background-color: beige;
+    -fx-grid-lines-visible: false;
+    -fx-hgap: 5;
+    -fx-vgap: 15;
+    -fx-padding: 10;
+}
+
+#Buttons {
+    -fx-pref-columns: 6;
+    -fx-pref-tile-width: 75;
+    -fx-hgap: 5;
+    -fx-vgap: 5;
+}
+
+.button {
+    -fx-background-color: lightblue;
+    -fx-font: bold 16pt "courier new";
+}
+.button:hover{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BankAccount
+comment1.params=
+comment1.target=BankAccount()
+comment2.params=a\ p\ b
+comment2.target=BankAccount(int,\ int,\ int)
+comment3.params=amount
+comment3.target=boolean\ withdraw(int)
+comment4.params=amount
+comment4.target=boolean\ overdraft(int)
+comment5.params=amount
+comment5.target=boolean\ deposit(int)
+comment6.params=
+comment6.target=int\ getBalance()
+comment7.params=newPassword
+comment7.target=boolean\ changePassword(int)
+numComments=8
