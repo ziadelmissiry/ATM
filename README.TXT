@@ -1,3 +1,4 @@
+
 # Introduction 
 Most people have heard of  Java, the programming language can also help to manage stores through an efficient cashier system. However, not many people know how one actually goes about creating a cashier system in this language. That is why I am writing this essay - to demonstrate the process and instructions for setting up a cashier system with Catshop Java. This essay will present what I did and how I went about completing this task so that readers can gain insight into how to create their own accurate cashier systems using Catshop Java and maybe even add a few creative touches to it.
 
