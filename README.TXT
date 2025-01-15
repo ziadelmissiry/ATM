@@ -1,17 +1,11 @@
-atm-lab project
+# Introduction 
+Most people have heard of  Java, the programming language can also help to manage stores through an efficient cashier system. However, not many people know how one actually goes about creating a cashier system in this language. That is why I am writing this essay - to demonstrate the process and instructions for setting up a cashier system with Catshop Java. This essay will present what I did and how I went about completing this task so that readers can gain insight into how to create their own accurate cashier systems using Catshop Java and maybe even add a few creative touches to it.
 
-The atm-lab code creates the ATM, but the methods in the Bank and BankAccount 
-classes which actually do the banking functions are incomplete.
-The lab class exercise (with tutor support) is to complete the BankAccount.
+# How does all the code work together?
+The Main class is responsible for starting all the clients in the cashier application. It is designed as a single application, which is good for testing the system without using Remote Method Invocation (RMI). The class begins by creating an instance of the LocalMiddleFactory, which is used to create objects to access the stock list. The Main class then starts the different clients such as the customer, cashier, back door, pick, display, and collection clients. Each client is started using the Model-View-Controller (MVC) pattern, which separates the logic of the application into three interconnected components: the model, the view, and the controller (Kumar, 2021). The model contains the data and the logic of the application, the view displays the data, and the controller handles the interactions between the user and the model. The Main class uses the LocalMiddleFactory to start each client, and it sets the default close operation of each client's window to exit on close.
 
-There are four places in the code you need to change:
--   in the Bank class, the login method needs code to find a bank account, 
-    given a username and password
--   in the BankAccount class, the three methods withdraw, deposit and balance
-    need code added to make them work properly.
+# Cashie package
+To effectively build a computer application that simulates the role of a cashier in a retail store. In the frontend server or the client side there has to be a cashier class. In this case, the "Cashier" package is created that includes a CashierModel class that handles data and logic, a CashierView class that handles the graphical user interface, and a CashierController class that handles user input and communicates between the Model and View.  Which acts as the role of a cashier in a retail store. The class allows users to input product codes to check if they are in stock and if available, add it to the basket. Once added, items are ready for purchase by clicking on “check out” at the bottom-right corner of the Cashier window. The code also contains extra functionality such as sound effects playing when various buttons are clicked or hovered over and even change button color upon interaction with them. 
 
-atm-solution includes the code to do this
-
-The assessment project uses atm-solution as the starting point for adding
-new features as discussed in lectures and seminars. Tutors may not help directly 
-with this but will talk you through examples and answer questions.
+# Adding a remove item button
+ Featured in figure 1, we can see what this application looks like when code is properly implemented. Starting with the remove button, this feature is coded within three main components: 1. CashierController; 2. CashierModel; and 3. CashierView-- all of which are necessary for smooth functionality. In essence, these parts work together to allow users to easily remove an item from their basket or shopping cart within seconds. In detail, firstly,the Cashier Controller has a method called ‘remove_Item’ embedded into it which takes product number as input and calls corresponding methods in both the CashierModel and CashierView. Secondly coming onto Cashier Model where there is another method called 'remove_Item' which basically receives a product number as argument and attempts to delete it from basket of purchased items if not null initialized already before removing an item via looping through basket and returning modified instance of new basket back to controller class finally updating view accordingly when done correctly . Last but not least ,in order to provide a user-friendly interface alongside simplify meaningful implementation in the CashierView, there is a button labeled "REMOVE" and an input field for the product number. When the "REMOVE" button is clicked, the product number entered in the input field is passed to the "remove_Item" method in the CashierController. 
